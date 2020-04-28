@@ -51,6 +51,7 @@ class App extends Component {
   render () {
     let renderMessage
     let renderButtons
+    let renderBackButton
     let renderLogin
     let renderRegister
     const { renderLoginForm, renderRegisterForm, authenticated } = this.state
@@ -69,6 +70,7 @@ class App extends Component {
           <>
             <div>
               <button
+                className='ui primary button'
                 id='login'
                 onClick={() =>
                   this.setState({ renderLoginForm: true, message: '' })
@@ -77,6 +79,7 @@ class App extends Component {
                 Login
               </button>
               <button
+                className='ui primary button'
                 id='register'
                 onClick={() =>
                   this.setState({ renderRegisterForm: true, message: '' })
@@ -88,29 +91,49 @@ class App extends Component {
           </>
         )
         break
-      // case authenticated:
-      //   renderMessage = (<p id='message'>Hi {JSON.parse(sessionStorage.getItem('credentials')).uid}</p>)
-      //   break
     }
 
     if (this.state.message) {
       renderMessage = <p id='message'>{this.state.message}</p>
     }
 
+    if ((renderLoginForm || renderRegisterForm) && !authenticated) {
+      renderBackButton = (
+        <>
+          <a
+            className='ui primary button'
+            id='backButton'
+            onClick={() =>
+              this.setState({
+                renderRegisterForm: false,
+                renderLoginForm: false,
+                registered: false,
+                message: ''
+              })
+            }
+          >
+            Back
+          </a>
+        </>
+      )
+    }
+
     return (
       <>
-        <div class='ui container'>
-          <h1>Slowfood</h1>
-          <p>{renderButtons}</p>
-          <p>{renderMessage}</p>
-          <p>{renderLogin}</p>
-          <p>{renderRegister}</p>
-        </div>
-        <div class='ui container'>
-          <div>
-            <ShowMenu />
+          <section className='buttons'>
+            {renderButtons}{renderBackButton}
+          </section>
+          <div className='ui container'>
+            <h1>Janko's Burgers and Pizzas</h1>
+            <p className='messages'>{renderMessage}</p>
+            <p className='forms'>{renderLogin}</p>
+            <p className='forms'>{renderRegister}</p>
           </div>
-        </div>
+          <div className='ui container'>
+            <div>
+              <ShowMenu />
+            </div>
+          </div>
       </>
     )
   }
