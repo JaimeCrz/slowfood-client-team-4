@@ -3,7 +3,8 @@
 ### Authors
 [Robin Lillqvist](https://github.com/robin-lillqvist)  
 [Jaime Cruz Hostalot](https://github.com/jaimeCrz)  
-[Janko Radakovic](https://github.com/MadFarmer101)  
+[Janko Radakovic](https://github.com/MadFarmer101)
+[Daniel Bryant](https://github.com/DanielGITB)  
 
 ## Built with
 **Front End:** React v.16.12.0 | CSS  
