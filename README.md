@@ -10,7 +10,7 @@
 **Front End:** React v.16.12.0 | CSS  
 **Back End:** Ruby 2.5.1 | Rails 6.0.2 
 **Testing framework:** Cypress  
-**Deployed at:** [Netlify](https://slowfoodchallenge.netlify.com/) and [Heroku](https://slowfood-group4.herokuapp.com/).
+**Deployed at:** [Netlify](https://slowfood-challenge-team-4.netlify.app/) and [Heroku](https://slowfood-challenge.herokuapp.com/).
 
 ## The code   
 This project is the client facing side of our Slowfood application. The master repository for the Slowfood API, built in Rails, can be found [Here](https://github.com/CraftAcademy/slowfood_api_team_1).
