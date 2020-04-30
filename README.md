@@ -1,4 +1,6 @@
 # Slowfood challenge Team 4  (client)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/207875d1-9139-4c85-b34b-9f6a23780915/deploy-status)](https://app.netlify.com/sites/slowfoodchallenge/deploys)
+[![Build Status](https://semaphoreci.com/api/v1/jaimecrz/slowfood-client-team-4/branches/dependabot-npm_and_yarn-acorn-5-7-4/badge.svg)](https://semaphoreci.com/jaimecrz/slowfood-client-team-4)
 
 ### Authors
 [Robin Lillqvist](https://github.com/robin-lillqvist)  
@@ -10,7 +12,7 @@
 **Front End:** React v.16.12.0 | CSS  
 **Back End:** Ruby 2.5.1 | Rails 6.0.2 
 **Testing framework:** Cypress  
-**Deployed at:** [Netlify](https://slowfood-challenge-team-4.netlify.app/) and [Heroku](https://slowfood-challenge.herokuapp.com/).
+**Deployed at:** [Netlify](https://slowfoodchallenge.netlify.com/) and [Heroku](https://slowfood-challenge.herokuapp.com/).
 
 ## The code   
 This project is the client facing side of our Slowfood application. The master repository for the Slowfood API, built in Rails, can be found [Here](https://github.com/CraftAcademy/slowfood_api_team_1).
